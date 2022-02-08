@@ -9,3 +9,23 @@ img{
     width: 25vw;
     display: block;
 }
+.topa{
+    display: flex;
+    justify-content: space-between;
+    
+    height: 10vw;
+    background-color: aqua;
+}
+
+.cart i{
+    color: orange;
+    font-size: 3vw;
+}
+.apples{
+background-image: url(./images/twin.jpg);
+}
+.all{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    
+}
