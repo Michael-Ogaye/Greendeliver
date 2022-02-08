@@ -5,10 +5,12 @@
 }
 
 img{
-    height: 20vw;
-    width: 25vw;
-    display: block;
+ display: block;   
+
+height: 15vw;
+width: 19vw;
 }
+
 .topa{
     display: flex;
     justify-content: space-between;
@@ -27,5 +29,45 @@ background-image: url(./images/twin.jpg);
 .all{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    
+    
+}
+.box{
+display: flex;
+flex-direction: column;
+border: 1px solid red;
+margin: 1vw;
+height: 28vw;
+width: 28vw;
+justify-content:space-between;
+align-items: center;
+text-align-last: center;
+
+
+
+
+
+
+}
+.box p{padding: 1vw;}
+.circle{
+    clip-path: circle();
+}
+.order{
+    
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1vw;
+}
+.order p{
+    margin-left: 3vw;
+}
+span{
+    display: block;
+    background-color: lightblue;
+    padding: 1vw;
+    color: maroon;
+    font-weight: bold;
+    
     
 }
