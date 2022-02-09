@@ -15,33 +15,46 @@ width: 19vw;
     display: flex;
     justify-content: space-between;
     
-    height: 10vw;
-    background-color: aqua;
+    height: 15vw;
+    
+    margin-bottom: 5vw;
 }
 
 .cart i{
     color: orange;
     font-size: 3vw;
 }
-.apples{
-background-image: url(./images/twin.jpg);
+.word{
+    align-self: center;
+}
+
+.word p{
+color: maroon;
+font-size: 2.5vw;
+text-align-last: center;
+margin-left: 3vw;
+
+
 }
 .all{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+background-color: rgb(72, 168, 72);
     
     
 }
 .box{
 display: flex;
 flex-direction: column;
-border: 1px solid red;
+border: none;
 margin: 1vw;
-height: 28vw;
-width: 28vw;
+height: 30vw;
+width: 30vw;
 justify-content:space-between;
 align-items: center;
 text-align-last: center;
+border-radius: 2vw;
+background-color:white;
 
 
 
@@ -49,7 +62,11 @@ text-align-last: center;
 
 
 }
-.box p{padding: 1vw;}
+.box p{padding: 1vw;
+ font-size:1.4vw;               
+}
+
+
 .circle{
     clip-path: circle();
 }
@@ -65,9 +82,26 @@ text-align-last: center;
 span{
     display: block;
     background-color: lightblue;
-    padding: 1vw;
+    padding: 0.7vw;
     color: maroon;
     font-weight: bold;
+    font-size: clamp(1rem, 1.5vw, 2vw);
     
     
+}
+.order :nth-child(2){
+    font-weight: bold;
+    font-size: clamp(1rem, 1vw, 2rem);
+    color:orangered;
+}
+.order :nth-child(2):hover{
+    color: green;
+    text-decoration: underline;
+    cursor: pointer;
+    transition: 2s;
+    transform: rotate(2deg);
+    
+}
+em.upa{
+    margin-top: -6vw;
 }
