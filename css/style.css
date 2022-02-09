@@ -7,17 +7,21 @@
 img{
  display: block;   
 
-height: 15vw;
-width: 19vw;
+height: 14vw;
+width: 18vw;
+}
+img.long{
+    width: 12vw;
+    height: 18vw;
 }
 
 .topa{
     display: flex;
     justify-content: space-between;
-    
+    background-color: rgb(174, 238, 174);
     height: 15vw;
     
-    margin-bottom: 5vw;
+    margin-bottom: 0;
 }
 
 .cart i{
@@ -39,7 +43,7 @@ margin-left: 3vw;
 .all{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-background-color: rgb(72, 168, 72);
+background-color: rgb(163, 241, 163);
     
     
 }
@@ -48,13 +52,13 @@ display: flex;
 flex-direction: column;
 border: none;
 margin: 1vw;
-height: 30vw;
-width: 30vw;
+height: 25vw;
+width: 25w;
 justify-content:space-between;
 align-items: center;
 text-align-last: center;
 border-radius: 2vw;
-background-color:white;
+background-color: white;
 
 
 
@@ -62,7 +66,7 @@ background-color:white;
 
 
 }
-.box p{padding: 1vw;
+.box p{padding: 0.5vw;
  font-size:1.4vw;               
 }
 
@@ -81,17 +85,18 @@ background-color:white;
 }
 span{
     display: block;
-    background-color: lightblue;
-    padding: 0.7vw;
+    background-color:greenyellow;
+    padding: 0.4vw;
     color: maroon;
     font-weight: bold;
-    font-size: clamp(1rem, 1.5vw, 2vw);
+    font-size: clamp(0.7em, 1.3vw, 2vw);
+    border-radius: 0.3vw;
     
     
 }
 .order :nth-child(2){
     font-weight: bold;
-    font-size: clamp(1rem, 1vw, 2rem);
+    font-size: clamp(0.5rem, 1vw, 2rem);
     color:orangered;
 }
 .order :nth-child(2):hover{
@@ -104,4 +109,12 @@ span{
 }
 em.upa{
     margin-top: -6vw;
+}
+.logo{
+
+    margin-top: 3vw;
+}
+img.small{
+    width: 6vw;
+    height: 5vw;
 }
