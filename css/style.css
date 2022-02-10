@@ -147,11 +147,11 @@ flex-wrap: wrap;
     margin: 0 auto;
     border-radius: 0;
     border-bottom: 1px solid black;
-    height: auto;
+    height: 52vw;
 }
-.circle{
-width: 25vw;
-height: 20vw;
+.circle, img.long{
+width: 30vw;
+height: 25vw;
 
 }
 span{
@@ -163,6 +163,10 @@ span.plain{
 
 .order :nth-child(2){
     font-size: clamp(0.5rem, 0.9rem, 1.5rem);
+}
+em{
+    font-size: clamp(0.7rem, 1.2rem,1.7rem);
+    margin-bottom: 3vw;
 }
     
 }
