@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+body{
+    font-family: sans-serif;
+}
 
 img{
  display: block;   
@@ -18,18 +21,26 @@ img.long{
 .topa{
     display: flex;
     justify-content: space-between;
-    background-color: rgb(174, 238, 174);
+    background-color: rgba(1, 154, 1, 0.5);
     height: 15vw;
     
     margin-bottom: 0;
 }
+.fa-shopping-cart{
+    font-size: 3vw;
+    color: brown;
+}
 
-.cart i{
+/* .cart i{
     color: orange;
     font-size: 3vw;
-}
+} */
 .word{
     align-self: center;
+}
+span.plain{
+    display: inline;
+    background-color:white;
 }
 
 .word p{
@@ -43,7 +54,8 @@ margin-left: 3vw;
 .all{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-background-color: rgb(163, 241, 163);
+/* background-color: rgb(163, 241, 163); */
+background: rgba(1, 154, 1, 0.5);
     
     
 }
@@ -51,6 +63,7 @@ background-color: rgb(163, 241, 163);
 display: flex;
 flex-direction: column;
 border: none;
+
 margin: 1vw;
 height: 25vw;
 width: 25w;
@@ -58,7 +71,8 @@ justify-content:space-between;
 align-items: center;
 text-align-last: center;
 border-radius: 2vw;
-background-color: white;
+/* background-color: rgba(255, 255, 255, 0.74); */
+border: 1px solid #ddd;
 
 
 
@@ -100,7 +114,7 @@ span{
     color:orangered;
 }
 .order :nth-child(2):hover{
-    color: green;
+    color:white;
     text-decoration: underline;
     cursor: pointer;
     transition: 2s;
@@ -117,4 +131,38 @@ em.upa{
 img.small{
     width: 6vw;
     height: 5vw;
+}
+@media screen and (max-width: 768px){
+.all{
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
+
+
+
+
+}
+.box{
+    width: 90%;
+    margin: 0 auto;
+    border-radius: 0;
+    border-bottom: 1px solid black;
+    height: auto;
+}
+.circle{
+width: 25vw;
+height: 20vw;
+
+}
+span{
+    font-size: clamp(1rem, 2vw, 3vw);
+}
+span.plain{
+    font-size: clamp(0.7rem, 1.3vw,2vw);
+}
+
+.order :nth-child(2){
+    font-size: clamp(0.5rem, 0.9rem, 1.5rem);
+}
+    
 }
