@@ -17,6 +17,10 @@ img.long{
     width: 12vw;
     height: 18vw;
 }
+a{
+    display: block;
+    text-decoration: none;
+}
 
 .topa{
     display: flex;
